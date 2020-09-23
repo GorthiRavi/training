@@ -1,0 +1,17 @@
+<!--- TEMPLATENAME: vartest.isml --->
+
+<isset name="var1" value="${1}" scope="session" />
+<isset name="var2" value="${2}" scope="page" />
+<isset name="var3" value="${3}" scope="pdict" />
+<isset name="var4" value="${false}" scope="session" />
+<isset name="var5" value="hello" scope="session" />
+<isset name="var6" value="${4}" scope="request" />
+<isset name="var7" value="${request.custom.var6 + 1}" scope="request" />
+
+${session.custom.var1} </br>
+${var2} </br>
+${pdict.var3}</br>
+${session.custom.var4} </br>
+${session.custom.var5} </br>
+${request.custom.var6} </br>
+${request.custom.var7}

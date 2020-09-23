@@ -1,0 +1,28 @@
+<ismodule template="product/producttile"
+	name="ravicustomtag"
+	attribute="product"
+	attribute="showswatches"
+	attribute="showpricing"
+	attribute="showpromotion"
+	attribute="showrating"
+	attribute="showcompare"
+	attribute="cache"
+/>
+
+
+<ismodule template="product/producttilecustom"
+	name="producttilecustom"
+	attribute="product"
+	attribute="showswatches"
+	attribute="showpricing"
+	attribute="showpromotion"
+	attribute="showrating"
+	attribute="showcompare"
+	attribute="cache"
+/>
+
+<ismodule template="myownmodule"
+	name="myowntag"
+	attribute="one"
+	attribute="two"
+	/>

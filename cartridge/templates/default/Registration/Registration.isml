@@ -1,0 +1,36 @@
+<isdecorate template="account/pt_account"> 
+	<isinclude template="util/modules">
+	<h3>${Resource.msg('global.registractionsignup', 'locale', null)}</h3>
+	<form action="${URLUtils.httpContinue()}" method="post" id="${pdict.CurrentForms.newsletter.htmlName}">
+		<fieldset>
+		    <div class="formfield">
+		     
+		        <isinputfield formfield="${pdict.CurrentForms.Registration.Fname}" type="input">
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.Registration.Lname}" type="input">
+		    </div>
+			
+			 <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.Registration.Gender}" type="radio">
+		    </div>
+			
+			 <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.Registration.Country}" type="select">
+		   	  </div>
+		    
+		      <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.Registration.DOB}" type="date">
+		      </div>
+		    
+		      <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.Registration.emailId}" type="input">
+		    </div>
+		  
+			<div class="formactions">
+			<input type="submit" value="${Resource.msg('global.submit','locale',null)}" 
+			    name="${pdict.CurrentForms.Registration.subscribe.htmlName}"/>
+			</div>
+		</fieldset>
+	</form>
+</isdecorate>

@@ -1,0 +1,7 @@
+<!--- TEMPLATENAME: productnotfound.isml --->
+
+<isdecorate template="product/pt_productsearchresult_nohits"> 
+
+<h1>${Resource.msgf('productnotfoundMsg', 'myBundle', 'default message coming from resource bundle', pdict.message)} </h1>
+<h1>${pdict.message1}</h1>
+</isdecorate>

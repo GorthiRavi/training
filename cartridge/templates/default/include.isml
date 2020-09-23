@@ -1,0 +1,5 @@
+<!--- TEMPLATENAME: include.isml --->
+
+<h1> Local include</h1>
+<isset name="param1" value="${pdict.param1}" scope="pdict" />
+<isinclude template="extras/calender"/>

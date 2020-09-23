@@ -1,0 +1,17 @@
+<iscomment>
+${pdict.myParameteronISML}
+
+<isscript>
+< var count = dw.customer.CustomerMgr.getRegisteredCustomerCount();
+</isscript>
+The total customer count is ${count}
+</iscomment>
+${pdict.param1}
+
+<h1> Local include</h1>
+<isinclude template="localInclude" />
+<h1> Remote include</h1>
+<isinclude url="${URLUtils.url('JRemoteInclude-Start', 'param1', pdict.param2)}" />
+
+<isinclude template="util/modules">
+<ismyowntag one="${200}" two="${300}" />

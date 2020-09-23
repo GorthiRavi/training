@@ -1,0 +1,23 @@
+<!--- TEMPLATENAME: showBasket.isml --->
+
+<isdecorate template="product/pt_productdetails">
+
+<isloop items="${pdict.Basket.allProductLineItems}" var="productLineItem">
+<isif condition="${productLineItem.product.name != null}"> </isif>
+    ${productLineItem.product.name}<br/>
+    </if>
+</isloop>
+--------------------
+<isloop items = "${pdict.Basket.allProductLineItems}"   var = "productLineItem" 
+   status = "loopStatus" >
+   item no: ${loopStatus.count}  ${productLineItem.lineItemText}
+</isloop>
+--------------------
+<isinclude template="util/modules">
+<isloop items = "${pdict.Basket.allProductLineItems}"
+    var = "productLineItem" 
+   status = "loopStatus" >
+  <isproducttile product="${productLineItem.product}" showswatches="${true}" showpricing="${true}" />  
+</isloop>
+--------------------------------
+</isdecorate>

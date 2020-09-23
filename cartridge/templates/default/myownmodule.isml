@@ -1,0 +1,5 @@
+<!--- TEMPLATENAME: myownmodule.isml --->
+
+<br/>
+${pdict.one}
+${pdict.two}

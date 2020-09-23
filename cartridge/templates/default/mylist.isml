@@ -1,0 +1,7 @@
+<!--- TEMPLATENAME: mylist.isml --->
+
+
+<isloop iterator="${pdict.mlist}" alias="x">
+<isprint value="${x}"><br>
+</isprint>
+</isloop>

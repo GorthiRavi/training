@@ -1,0 +1,21 @@
+<!--- TEMPLATENAME: productfound.isml --->
+
+
+<isdecorate template="product/pt_productdetails">
+
+<isinclude template="util/modules">
+<iscomment>
+<h1> ${pdict.product.name}</h1>
+ </iscomment>
+ <isif condition="${!empty(pdict.product)}">
+    <isravicustomtag product="${pdict.product}" showswatches="${true}" showpricing="${true}" cache="${false}" />  
+<iselse> 
+<h1>Product not found</h1>
+  </isif>
+ </isdecorate>
+
+
+
+
+
+

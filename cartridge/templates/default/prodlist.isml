@@ -1,0 +1,4 @@
+<isloop iterator="${pdict.plist}" alias="x">
+<isprint value="${x.name}"><br>
+</isprint>
+</isloop>

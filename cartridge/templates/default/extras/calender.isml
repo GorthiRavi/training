@@ -1,0 +1,4 @@
+<!--- TEMPLATENAME: calender.isml --->
+
+<h1>This is local include calender</h1></br>
+${pdict.param1}

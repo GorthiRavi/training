@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<form>
+<field formid="Fname" label="forms.contactus.Fname.label" type="string" mandatory="true" 
+    		binding="custom.Fname" max-length="50" 
+    		    missing-error="forms.fname.missing"/>
+<field formid="Lname" label="forms.contactus.Lname.label" type="string" mandatory="true" 
+    		binding="custom.Lname" max-length="50"/>
+
+<field formid="Gender" label="forms.contactus.Gender.label" type="string" mandatory="true"
+		binding="custom.Gender" missing-error="Plese select Gender">
+		<options>
+			<option label="Male" value="Male"/>
+			<option label="Female" value="Female"/>
+		</options>
+</field>
+    		
+<field formid="Country" label="forms.contactus.Country.label" type="string" mandatory="true" 
+    		binding="custom.Country" max-length="50">
+    		
+    	<options>
+			<option label="India" value="India"/>
+			<option label="SriLanka" value="SriLanka"/>
+			<option label="Pakistan" value="Pakistan"/>
+			<option label="Bangladesh" value="Bangladesh"/>
+			<option label="China" value="China"/>
+			<option label="Nepal" value="Nepal"/>
+			<option label="Iran" value="Iran"/>
+			<option label="Iraq" value="Iraq"/>
+			<option label="Mangolia" value="Mangolia"/>
+			<option label="Japan" value="Japan"/>
+			<option label="Afghanistan" value="Afghanistan"/>
+			<option label="Kenya" value="Kenya"/>
+		</options>	
+    		
+</field>
+    		
+<field formid="DOB" label="forms.contactus.Dateofbirth.label" type="string" mandatory="true" 
+    		binding="custom.DOB" max-length="50"/>
+
+<field formid="emailId" label="forms.contactus.emailId.label" type="string" mandatory="true" 
+    		binding="custom.emailId" max-length="50"/>
+<action formid="subscribe" valid-form="true"/>
+
+
+
+
+
+
+</form>
